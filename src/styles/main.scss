@@ -16,13 +16,22 @@ body {
   background-color: #4f2e59;
   color: #e5e4d3;
   text-align: center;
+  font-size: 18px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #333; /* old IE */
+  background-color: #584467; /* Modern Browsers */
 }
 
 .cover {
   padding: 20px;
   padding-left: 15%;
   padding-right: 15%;
-  padding-top: calc(400px + 1vh);
+  padding-top: calc(100px + 1vh);
   position: relative;
   font-size: 120px;
 }
@@ -32,8 +41,8 @@ body {
 }
 
 .covertext {
-  font-size: 120px;
-  z-index: 1;
+  font-size: 64px;
+  color: white;
 }
 
 .cover:before {
@@ -50,18 +59,22 @@ body {
   filter: blur(10px);
   z-index: 0;
 }
-.cover h1 {
-  position: relative;
+.covertext {
+  position: sticky;
   z-index: 1;
+  color: white;
 }
 
-p {
+@media only screen and (max-width: 320px) {
+  .covertext {
+    font-size: 16vw;
+  }
 }
 
 .add_to_server {
   width: 20%;
   height: 5vh;
-  background-color: #4d1b4c;
+  background-color: #6d8199;
   color: #ffffff;
   font-family: Whitney, Inter, sans;
   border-radius: 3px;
