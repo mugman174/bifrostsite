@@ -12,11 +12,19 @@
   font-family: Inter, Arial, sans;
 }
 
-body {
+html {
   background-color: #4f2e59;
   color: #e5e4d3;
   text-align: center;
   font-size: 18px;
+}
+
+.body {
+    margin: 0
+}
+
+button {
+    cursor: pointer
 }
 
 hr {
@@ -34,15 +42,11 @@ hr {
   padding-top: calc(100px + 1vh);
   position: relative;
   font-size: 120px;
+overflow: clip;
 }
 
 .cover:after {
   padding-bottom: calc(40px + 1vh);
-}
-
-.covertext {
-  font-size: 64px;
-  color: white;
 }
 
 .cover:before {
@@ -59,8 +63,10 @@ hr {
   filter: blur(10px);
   z-index: 0;
 }
+
 .covertext {
-  position: sticky;
+  font-size: 64px;
+  position: relative;
   z-index: 1;
   color: black;
 }
