@@ -1,14 +1,70 @@
 @font-face {
-    font-family: Inter;
-    src: url("/Inter.ttf") format("ttf")
+  font-family: Inter;
+  src: url("/Inter.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: Whitney;
+  src: url("/Whitney.otf") format("opentype");
 }
 
 :root {
-    font-family: Inter, Arial, sans
+  font-family: Inter, Arial, sans;
 }
 
 body {
-    background-color: #4f2e59;
-    color: #e5e4d3;
-    text-align: center;
+  background-color: #4f2e59;
+  color: #e5e4d3;
+  text-align: center;
+}
+
+.cover {
+  padding: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: calc(400px + 1vh);
+  position: relative;
+  font-size: 120px;
+}
+
+.cover:after {
+  padding-bottom: calc(40px + 1vh);
+}
+
+.covertext {
+  font-size: 120px;
+  z-index: 1;
+}
+
+.cover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/favicon.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  filter: blur(10px);
+  z-index: 0;
+}
+.cover h1 {
+  position: relative;
+  z-index: 1;
+}
+
+p {
+}
+
+.add_to_server {
+  width: 20%;
+  height: 5vh;
+  background-color: #4d1b4c;
+  color: #ffffff;
+  font-family: Whitney, Inter, sans;
+  border-radius: 3px;
+  border: none;
+  font-size: 14.5px;
 }
