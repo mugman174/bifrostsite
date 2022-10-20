@@ -62,7 +62,7 @@ hr {
 .covertext {
   position: sticky;
   z-index: 1;
-  color: white;
+  color: black;
 }
 
 @media only screen and (max-width: 320px) {
@@ -79,5 +79,13 @@ hr {
   font-family: Whitney, Inter, sans;
   border-radius: 3px;
   border: none;
-  font-size: 14.5px;
+  font-size: 3vh;
+}
+
+@media only screen and (max-width: 400px) {
+  .add_to_server {
+    width: 75%;
+    height: 10vh;
+    font-size: 6vh
+  }
 }
