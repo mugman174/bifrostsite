@@ -72,7 +72,7 @@ overflow: clip;
   }
 }
 
-.add_to_server {
+.button {
   width: 40vh;
   height: 5vh;
   background-color: #6d8199;
@@ -84,7 +84,7 @@ overflow: clip;
 }
 
 @media only screen and (max-width: 400px) {
-  .add_to_server {
+  .button {
     width: 75%;
     height: 10vh;
     font-size: 6vh
