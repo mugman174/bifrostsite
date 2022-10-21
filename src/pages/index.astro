@@ -2,12 +2,7 @@
 import Main from "../layouts/Main.astro";
 ---
 
-<Main title="Home">
-  <div class="cover">
-  <div class="coverimage"/>
-  <h1 class="covertext">Bifrost</h1>
-  </div>
-  <hr/>
+<Main title="Home" covertext="Bifrost">
   <p>Bifrost is a Discord bot built for all your auditing, logging, and moderation needs! It can log many events, including message deletes and edits, member joins and leaves, and many more. Want to find out who sent that annoying ghost ping? Look no further than Bifrost's logs. Curious as to who keeps joining and leaving voice channels randomly? It's right there, in Bifrost's audit logs.</p>
   <p>
     <button onclick="goTo('https://discord.com/api/oauth2/authorize?client_id=784224929549254696&permissions=8&scope=applications.commands%20bot')" class="button">Add to Server</button>

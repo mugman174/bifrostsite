@@ -1,9 +1,10 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
+  covertext: string;
 }
 
-const { title } = Astro.props;
+const { title, covertext } = Astro.props;
 import "../styles/main.scss";
 ---
 
@@ -18,6 +19,11 @@ import "../styles/main.scss";
     <title>{title}</title>
 </head>
 <body>
+  <div class="cover">
+  <div class="coverimage"/>
+  <h1 class="covertext">{covertext}</h1>
+  </div>
+  <hr/>
     <slot />
 </body>
 </html>
