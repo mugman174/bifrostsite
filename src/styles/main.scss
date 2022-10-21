@@ -3,11 +3,6 @@
   src: url("/Inter.ttf") format("ttf");
 }
 
-@font-face {
-  font-family: Whitney;
-  src: url("/Whitney.otf") format("opentype");
-}
-
 :root {
   font-family: Inter, Arial, sans;
 }
@@ -82,7 +77,7 @@ overflow: clip;
   height: 5vh;
   background-color: #6d8199;
   color: #ffffff;
-  font-family: Whitney, Inter, sans;
+  font-family: Inter, sans;
   border-radius: 3px;
   border: none;
   font-size: 3vh;
