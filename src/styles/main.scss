@@ -15,11 +15,11 @@ html {
 }
 
 .body {
-    margin: 0
+  margin: 0;
 }
 
 button {
-    cursor: pointer
+  cursor: pointer;
 }
 
 hr {
@@ -37,7 +37,7 @@ hr {
   padding-top: calc(100px + 1vh);
   position: relative;
   font-size: 120px;
-overflow: clip;
+  overflow: clip;
 }
 
 .cover:after {
@@ -87,6 +87,6 @@ overflow: clip;
   .button {
     width: 75%;
     height: 10vh;
-    font-size: 6vh
+    font-size: 6vh;
   }
 }
