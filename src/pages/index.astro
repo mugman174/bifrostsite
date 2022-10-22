@@ -9,6 +9,6 @@ import Main from "../layouts/Main.astro";
     <button onclick="goTo('https://discord.gg/wTP262tVfq')" class="button">Join Bifrost Support</button>
   </div>
   <script>
-    function goTo(url) {location.href = url}
+    function goTo(url: string) {location.href = url}
   </script>
 </Main>
