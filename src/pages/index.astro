@@ -5,10 +5,7 @@ import Main from "../layouts/Main.astro";
 <Main title="Home" covertext="Bifrost">
   <p>Bifrost is a Discord bot built for all your auditing, logging, and moderation needs! It can log many events, including message deletes and edits, member joins and leaves, and many more. Want to find out who sent that annoying ghost ping? Look no further than Bifrost's logs. Curious as to who keeps joining and leaving voice channels randomly? It's right there, in Bifrost's audit logs.</p>
   <div>
-    <button onclick="goTo('https://discord.com/api/oauth2/authorize?client_id=784224929549254696&permissions=8&scope=applications.commands%20bot')" class="button">Add to Server</button>
-    <button onclick="goTo('https://discord.gg/wTP262tVfq')" class="button">Join Bifrost Support</button>
+    <a href="https://discord.com/api/oauth2/authorize?client_id=784224929549254696&permissions=8&scope=applications.commands%20bot"><button class="button">Add to Server</button></a>
+    <a href="https://discord.gg/wTP262tVfq"><button class="button">Join Bifrost Support</button></a>
   </div>
-  <script>
-    function goTo(url: string) {location.href = url}
-  </script>
 </Main>
