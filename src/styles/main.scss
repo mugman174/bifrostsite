@@ -14,20 +14,17 @@ html {
   font-size: 18px;
 }
 
-.body {
-  margin: 0;
+.content {
+    text-align: start;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 864px;
 }
 
 button {
   cursor: pointer;
-}
-
-hr {
-  border: none;
-  height: 1px;
-  /* Set the hr color */
-  color: #333; /* old IE */
-  background-color: #584467; /* Modern Browsers */
 }
 
 .cover {
@@ -69,39 +66,44 @@ hr {
 @media only screen and (max-width: 320px) {
   .covertext {
     font-size: 16vw;
+    width: 50%;
   }
 }
 
 .button {
-  width: 40vh;
-  height: 5vh;
+  text-align: center;
   background-color: #6d8199;
   color: #ffffff;
   font-family: Inter, Arial, sans;
   border-radius: 4px;
   border: none;
-  font-size: 3vh;
+  font-size: 20px;
+  padding: 6px;
+  display: block;
+  width: 100%;
 }
 
-@media only screen and (max-width: 400px) {
-  .button {
-    width: 75%;
-    height: 10vw;
-    font-size: 6vw;
-  }
-  p {
-    font-size: 3vh
-  }
+a {
+    text-decoration: none;
 }
 
-@media only screen and (min-width: 1920px) {
-    p {
-        font-size: 2vh
+@media (max-width: 600px) {
+    .button {
+        font-size: 30px;
     }
-    .covertext {
-        font-size: 7vh
+    tr {
+        display: block !important;
+        width: 100% !important;
     }
-    .cover:before {
-        filter: blur(0.5vw)
+    td {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 10px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    table {
+        width: 100%;
     }
 }

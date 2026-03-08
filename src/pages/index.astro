@@ -1,11 +1,15 @@
 ---
 import Main from "../layouts/Main.astro";
+import Button from "../components/Button.astro";
 ---
 
 <Main title="Home" covertext="Bifrost">
-  <p>Bifrost is a Discord bot built for all your auditing, logging, and moderation needs! It can log many events, including message deletes and edits, member joins and leaves, and many more. Want to find out who sent that annoying ghost ping? Look no further than Bifrost's logs. Curious as to who keeps joining and leaving voice channels randomly? It's right there, in Bifrost's audit logs.</p>
-  <div>
-    <a href="https://discord.com/api/oauth2/authorize?client_id=784224929549254696&permissions=8&scope=applications.commands%20bot"><button class="button">Add to Server</button></a>
-    <a href="https://discord.gg/wTP262tVfq"><button class="button">Join Bifrost Support</button></a>
-  </div>
+    <p>Bifrost is a Discord bot built for all your auditing, logging, and moderation needs! It can log many events, including message deletes and edits, member joins and leaves, and many more.</p>
+    <p>Want to find out who sent that annoying ghost ping? Look no further than Bifrost's logs. Curious as to who keeps joining and leaving voice channels randomly? It's right there, in Bifrost's audit logs.</p>
+  <table style="margin: 0px auto">
+    <tr>
+        <Button href="https://discord.com/api/oauth2/authorize?client_id=784224929549254696&permissions=8&scope=applications.commands%20bot">Add to Server</Button>
+        <Button href="https://discord.gg/wTP262tVfq">Join Support Server</Button>
+    </tr>
+  </table>
 </Main>
