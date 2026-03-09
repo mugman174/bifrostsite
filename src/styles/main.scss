@@ -8,10 +8,10 @@
 }
 
 html {
-  background-color: #4f2e59;
+  background-color: #27163a;
   color: #e5e4d3;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .content {
@@ -21,6 +21,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     max-width: 864px;
+    padding-top: 15px;
 }
 
 button {
@@ -72,15 +73,19 @@ button {
 
 .button {
   text-align: center;
-  background-color: #6d8199;
+  background-color: #412F55;
   color: #ffffff;
   font-family: Inter, Arial, sans;
   border-radius: 4px;
   border: none;
   font-size: 20px;
-  padding: 6px;
+  padding: 12px;
   display: block;
   width: 100%;
+}
+
+table {
+    border-spacing: 10px;
 }
 
 a {
